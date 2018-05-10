@@ -59,6 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
     vendor/lge/bullhead/proprietary/etc/permissions/com.android.sdm.plugins.connmo.xml:system/etc/permissions/com.android.sdm.plugins.connmo.xml \
     vendor/lge/bullhead/proprietary/etc/permissions/com.android.sdm.plugins.sprintdm.xml:system/etc/permissions/com.android.sdm.plugins.sprintdm.xml \
+    vendor/lge/bullhead/proprietary/etc/permissions/com.google.android.camera.experimental2016.xml:system/etc/permissions/com.google.android.camera.experimental2016.xml \
     vendor/lge/bullhead/proprietary/etc/permissions/privapp-permissions-bullhead.xml:system/etc/permissions/privapp-permissions-bullhead.xml \
     vendor/lge/bullhead/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/lge/bullhead/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
@@ -89,7 +90,6 @@ PRODUCT_PACKAGES += \
     DMConfigUpdate \
     DMService \
     DiagMon \
-    GCS \
     HotwordEnrollmentOKGoogleWCD9330 \
     HotwordEnrollmentTGoogleWCD9330 \
     HotwordEnrollmentXGoogleWCD9330 \
@@ -98,17 +98,7 @@ PRODUCT_PACKAGES += \
     atfwd \
     qcrilmsgtunnel \
     cneapiclient \
+    com.google.android.camera.experimental2016 \
     qcrilhook \
     rcsimssettings \
     rcsservice
-PRODUCT_COPY_FILES += \
-    vendor/lge/bullhead/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
-    vendor/lge/bullhead/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/lge/bullhead/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
-    vendor/lge/bullhead/proprietary/app/ims/lib/arm64/libimscamera_jni.so:system/app/ims/lib/arm64/libimscamera_jni.so \
-    vendor/lge/bullhead/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/lge/bullhead/proprietary/app/ims/lib/arm64/libimsmedia_jni.so:system/app/ims/lib/arm64/libimsmedia_jni.so
-
-PRODUCT_PACKAGES += \
-    datastatusnotification \
-    ims
